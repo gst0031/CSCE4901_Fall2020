@@ -1,0 +1,32 @@
+=======================================================================================
+Source: 
+	https://pypi.org/project/django-bootstrap4/
+	https://getbootstrap.com/
+	https://getbootstrap.com/docs/4.5/getting-started/introduction/
+=======================================================================================
+
+1. Install using pip:
+pip install django-bootstrap4
+
+2. Add to INSTALLED_APPS in your settings.py:
+	INSTALLED_APPS = (
+	    # ...
+	    "bootstrap4",
+	    # ...
+	)
+
+3. In your templates, load the bootstrap4 library and use the bootstrap_* tags:
+  Example Template)
+	{% load bootstrap4 %}
+
+	{# Display a form #}
+
+	<form action="/url/to/submit/" method="post" class="form">
+	    {% csrf_token %}
+	    {% bootstrap_form form %}
+	    {% buttons %}
+        	<button type="submit" class="btn btn-primary">Submit</button>
+	    {% endbuttons %}
+	</form>
+
+=======================================================================================
