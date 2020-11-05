@@ -58,13 +58,34 @@ for n in range(1, counter_volumes+1):
 #print(jmlr_link_list) #NOTE: jmlr_link_list[20]) -> "https://www.jmlr.org/papers/v21/"
 ## Volume[] Scraper
 
-## Scraper Set Up - Volume[x]
-# for n in range(counter_volumes): 
-#     current_url = jmlr_link_list[n] 
-#     print(current_url)
-#     source_url_get = requests.get(current_url).text
-#     soup_url = BeautifulSoup(source_url_get, 'lxml')
-#     break
+## Scraper Set Up - Volume[x] - Title, Authors, Month, Year
+seperator = "(" 
+for n in range(counter_volumes): 
+    current_url = jmlr_link_list[n] 
+    #print(current_url)
+    source_url_get = requests.get(current_url).text
+    soup_url = BeautifulSoup(source_url_get, 'lxml')
+    
+    current_volume_table = soup_url.find("table", cellspacing="0")
+    current_volume_titles = current_volume_table.find_all("dt")
+    #print(current_volume_titles[0])
+    # for line in current_volume_table.splitlines():
+    #     if "<dt> " in line:
+    #         #print(line)
+    #         csvName = jmlr + line + fileEnd
+    #         csvName = csvName.replace(" ", "_")
+    #         jmlr_volume_list.append(csvName) #NOTE: jmlr_volume_list[0] contains newest volume NOT oldest. Use reverse 
+    #         counter_volumes += 1
+    #         #print(csvName)
+    #current_volume_title = current_volume_table.find("dt")
+    for x in range(len(current_volume_titles)):
+        current_volume_titles[x] = current_volume_titles[x].text.rstrip()
+        string1 = str(current_volume_titles[x])
+        #print(string1)
+        current_volume_titles[x] = string1.split(seperator, 1)[0]
+        current_volume_titles[x] = str(current_volume_titles[x]).rstrip()
+        print(current_volume_titles[x]," ", x)
+    break
 # #print(soup_url.prettify())
 
 ## CSV OUTPUT ##
