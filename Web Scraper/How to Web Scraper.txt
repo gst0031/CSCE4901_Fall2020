@@ -1,0 +1,21 @@
+==================================
+            PACKAGES
+==================================
+
+**See currently installed packages with: $ pip list
+-- to remove: $ pip uninstall <package-name>
+
+$ pip install beautifulsoup4	## needs to be the 4th one - older version is just beautifulsoup
+
+## lxml parser because it will fill in certain missing htmls - Used in tutorial I followed
+$ pip install lxml
+# other possible parser: $ pip install html5lib
+
+## request library
+$ pip install requests
+
+========================================
+		NOTES
+========================================
+-- On IEEE (Example https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=8890757&punumber=34)
+	The abstracts are not in this html source. 

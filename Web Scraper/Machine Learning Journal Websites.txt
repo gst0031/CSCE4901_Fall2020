@@ -1,11 +1,18 @@
+=================================================
+Journal of Machine Learning
+
 https://www.jmlr.org/
+
+https://www.jmlr.org/papers/ (21 Volumes as of Nov 2020)
 
 https://www.jmlr.org/papers/v20/
 https://www.jmlr.org/papers/v19/
 https://www.jmlr.org/papers/v18/
 
 =================================================
-
 IEEE Transactions on Pattern Analysis and Machine Intelligence
 
 https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=34
+https://ieeexplore.ieee.org/xpl/issues?punumber=34&isnumber=9247540 // All volumes - by year & issue.
+
+=================================================
