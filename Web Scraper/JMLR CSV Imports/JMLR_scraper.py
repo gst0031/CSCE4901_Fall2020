@@ -145,34 +145,44 @@ for n in range(counter_volumes):
         if ("[abs]" in str(current_volume_aTag[i])) or (">abs<" in str(current_volume_aTag[i])):
             string1 = str(current_volume_aTag[i])
             string1 = string1.split('"')
-            string1 = (current_url+string1[1]).replace(" ", '')
+            if (n < 3):
+                string1 = (current_url+string1[1]).replace(" ", '')
+                print(string1)
+            elif((n==3) or (n==4)):
+                string1 = (string1[1]).replace(" ", '')
+                print(string1)
+            else:
+                string1 = "http://www.jmlr.org"+((string1[1]).replace(" ", ''))
+                print(string1)    
             abstractURL_list.append(string1)
     jmlr_abstract_URL_list.append(abstractURL_list)
     #print(len(jmlr_abstract_URL_list[n])) # !Testing
 #print(jmlr_abstract_URL_list[20]) # !Testing - Prints All URLs for Volume 21
 #print(jmlr_abstract_URL_list[20][0]) # !Testing - Prints First URL for Volume 21
 
-# ## ABSTRACT Scraper
-for x in range(jmlr_abstract_URL_list):
-    for y in range(jmlr_abstract_URL_list[x]):
-        # NOTE HOW STORAGE WORKS: jmlr_abstract_URL_list[x][y] : x is volume[x] and y is url[y] in volume[x]
-        current_url = jmlr_abstract_URL_list[y]
-        #print("################# ", current_url) # !Testing 
-        source_url_get = requests.get(current_url).text
-        soup_url = BeautifulSoup(source_url_get, 'lxml')
-        abstractURL_list = []   
+## ABSTRACT Scraper
+# for x in range(len(jmlr_abstract_URL_list)):
+#     for y in range(len(jmlr_abstract_URL_list[x])):
+#         # NOTE HOW STORAGE WORKS: jmlr_abstract_URL_list[x][y] : x is volume[x] and y is url[y] in volume[x]
+#         current_url = jmlr_abstract_URL_list[x][y]
+#         #print("################# ", current_url) # !Testing 
+#         source_url_get = requests.get(current_url).text
+#         soup_url = BeautifulSoup(source_url_get, 'lxml')
+#         current_volume_abstract_list = []      
 
-        # ABSTRACT URL get: Get evertyhing in <table> -> <a> -> "[abs]" : Abstract urls
-        current_volume_table = soup_url.find("div", id="content")
-        current_volume_aTag = current_volume_table.find_all("a")
-        for i in range(len(current_volume_aTag)):
-            if ("[abs]" in str(current_volume_aTag[i])) or (">abs<" in str(current_volume_aTag[i])):
-                string1 = str(current_volume_aTag[i])
-                string1 = string1.split('"')
-                string1 = (current_url+string1[1]).replace(" ", '')
-            abstractURL_list.append(string1)
-        jmlr_abstract_URL_list.append(abstractURL_list)
+        # ABSTRACT get: Get evertyhing in <table> -> <a> -> "[abs]" : Abstract urls
+        #current_volume_table = soup_url.find("div", id="content")
+        #current_volume_aTag = current_volume_table.find_all("h3")
+        #print()
+        # for i in range(len(current_volume_aTag)):
+        #     if ("[abs]" in str(current_volume_aTag[i])) or (">abs<" in str(current_volume_aTag[i])):
+        #         string1 = str(current_volume_aTag[i])
+        #         string1 = string1.split('"')
+        #         string1 = (current_url+string1[1]).replace(" ", '')
+        #     abstractURL_list.append(string1)
+        # jmlr_abstract_URL_list.append(abstractURL_list)
         #print(len(jmlr_abstract_URL_list[n])) # !Testing
+    #break
 #print(jmlr_abstract_URL_list) # !Testing
 
 
