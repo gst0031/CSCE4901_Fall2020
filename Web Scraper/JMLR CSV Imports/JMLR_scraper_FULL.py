@@ -1,5 +1,6 @@
 ## Web scraper for Journal of Machine Learning Research - https://www.jmlr.org/papers/
 # Can get from an html file or a web page - This will pull from webpage
+# Santosh Khadka santoshkhadka@my.unt.edu
 
 from bs4 import BeautifulSoup
 import requests

@@ -14,8 +14,6 @@ $ pip install lxml
 ## request library
 $ pip install requests
 
-## unidecode library - needed to turn unicode(accents) characters to ascii. Edit: Didn't work
-$ pip install unidecode
 ========================================
 		NOTES
 ========================================
