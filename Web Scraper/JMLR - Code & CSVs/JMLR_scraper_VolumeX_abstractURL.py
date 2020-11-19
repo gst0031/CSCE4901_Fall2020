@@ -29,7 +29,7 @@ for n in range(0, 1):
             abstractURL_list.append(string1)
     jmlr_abstract_URL_list.append(abstractURL_list)   
 print(len(jmlr_abstract_URL_list[0]))
-    
+     
 # txt = "apple#banana#cherry#orange"
 
 # # setting the maxsplit parameter to 1, will return a list with 2 elements!

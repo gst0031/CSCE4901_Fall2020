@@ -1,5 +1,5 @@
 import plotly.graph_objects as go
-
+ 
 # Create random data with numpy
 import numpy as np
 np.random.seed(1)
