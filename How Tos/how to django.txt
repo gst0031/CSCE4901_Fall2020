@@ -1,16 +1,27 @@
-# Version check
+# Version check (Python) - Using: Python 3.8.1
+$ python --version
+
+# Version check (Django) - Using: Django 3.1.3
 $ python -m django --version
 
 # Create a project
-$ django-admin startproject mysite
+$ django-admin startproject mysite . # need the period(.) or it wont make 'manage.py'
 
 # Run DEV server (from website directory - the one with manage.py)
 $ python manage.py runserver
+	NOTE: if the above line doesnt work(and youre on windows OS) you need to remove 
+		"#!/usr/bin/env python" from manage.py
+    NOTE: Run the server through powershell(windows)
+
+# Development server link
+http://127.0.0.1:8000/
 
 # Changing the port (default is: 8000) 
 $ python manage.py runserver 8080
 
 - NOTE: Automatic reloading of runserver
 The development server automatically reloads Python code for each request as needed. You don’t need to restart the server for code changes to take effect. However, some actions like adding files don’t trigger a restart, so you’ll have to restart the server in these cases.
+
+# settings.py
 
 

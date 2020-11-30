@@ -1,0 +1,6 @@
+==== Start ====
+$ pipenv install # if not done before. Will create "Pipfile" & "Pipfile.lock"
+$ pipenv shell	 # if already done above before, just do this line.
+
+==== Exit ====
+$ exit
