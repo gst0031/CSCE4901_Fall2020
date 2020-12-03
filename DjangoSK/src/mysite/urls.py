@@ -26,5 +26,6 @@ urlpatterns = [
     path('guides/', views.guides_view, name='guide'),
     path('account/', views.account_view, name='accounts'),
     path('graphs/', views.graphs_view, name='graphs'),
+    path('finance/', views.finance_view, name='finance'),
     path('admin/', admin.site.urls),
 ]

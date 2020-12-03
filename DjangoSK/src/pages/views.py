@@ -25,3 +25,6 @@ def graphs_view(request, *args, **kwargs):
 def account_view(request, *args, **kwargs):
     #return HttpResponse("<h1>Accounts</h1>")
     return render(request, "account.html", {})
+
+def finance_view(request, *args, **kwargs):
+    return render(request, "finance_data.html", {})

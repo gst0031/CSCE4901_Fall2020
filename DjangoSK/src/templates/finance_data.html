@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="Temporally-Biased Clustering">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Journal of Financial Economics</title>
+    <link rel="stylesheet" href="/static/webpage/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="/static/webpage/css/finance_data.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/static/webpage/js/jquery-1.9.1.min.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="/static/webpage/js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.0.13, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link id="u-page-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Cluster', 'Total Groupings'],
+          ['1', 144],
+          ['2',     309],
+          ['3',      58],
+          ['4',  192],
+          ['5', 271],
+          ['6',    236],
+          ['7', 210],
+          ['8', 244],
+          ['9', 140],
+          ['10', 213],
+          ['11', 142],
+          ['12', 182],
+          ['13', 172],
+          ['14', 136],
+          ['15', 209],
+        ]);
+
+        var options = {
+          title: 'Cluster Percentage'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" style="color: black">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Title');
+        data.addColumn('string', 'Author');
+        data.addColumn('number', 'Issue');
+        data.addColumn('number', 'Cluster');
+        data.addRows([
+          ['Sample Title', 'Sample Name', 1, 4],
+          ['Contracting under asymmetric information: Evidence from lockup agreements in seasoned equity offerings', 'Darren J. Kisgen', 3, 3], 
+          ['Contractual incompleteness, limited liability and asset price bubble', 'Darwin Cho', 2, 3], 
+          ['Identifying the effects of a lender of last resort on financial markets: Lessons from the founding of the fe', 'Jiaping Qi', 4, 6], 
+          ['Idiosyncratic risk and the cross-section of expected stock returns', 'Jiaping Qi', 4, 6], 
+          ['Leverage, investment, and firm growt', 'Kathleen Weiss Hanle', 2, 7], 
+          ['Leverage, output effects, and the M-M theorems', 'Kathleen Weiss Hanle', 1, 7], 
+          ['Short-term trading around ex-dividend days', 'Peter Klei', 3, 10], 
+          ['Should business groups be dismantled? The equilibrium costs of efficient internal capital market', 'Peter Lock', 1, 10], 
+          ['Should corporate debt include a rating trigger', 'Peter R. Locke', 1, 10], 
+['Should investors learn about the timing of equity risk', 'Peter Tufano', 1, 10], 
+['Taxation and executive compensation: Evidence from stock options', 'Richard Schmalense', 4, 11], 
+['The Eurobond market and corporate financial policy', 'Scott C. Lin', 2, 12], 
+['The relationship between return and market value of common stock', 'Sumit Agarwa', 4, 13], 
+['The relative pricing of U.S. Treasury STRIPS: empirical evidence', 'Sung Wook Jo', 3, 13], 
+['You canâ€™t always get what you want: Trade-size clustering and quantity choice in liquidity', 'Zoran IvkoviÄ‡', 1, 15], 
+['Expectation puzzles, time-varying risk premia, and affine models of the term structure', 'Harry Huizinga', 3, 5
+], ['Human capital relatedness and mergers and acquisitions', 'Jiang Wang', 4, 6
+], ['Human capital, capital structure, and employee pay: An empirical analysi', 'Jianjun Miao', 3, 6
+], ['Idea sharing and the performance of mutual funds', 'Jiaping Qi', 1, 6
+], ['Leverage dynamics over the business cycl', 'Kathleen Weiss Hanle', 1, 7
+], ['Predicting fraud by investment manager', 'Mikhail Cherno', 1, 9
+], ['Short-term interest rate dynamics: a spatial approac', 'Peter FeldhÃ¼tte', 4, 10], 
+['Short-term termination without deterring long-term investment: A theory of debt and buyout', 'Peter Hoffmann', 2, 10], 
+['Short-term traders and liquidity', 'Peter Joos', 2, 10], 
+['Tax uncertainty and retirement savings diversification', 'Richard S. Rubac', 4, 11], 
+['The equity premium and the concentration of aggregate shocks', 'Sarah W. Pec', 3, 12], 
+['The equity premium implied by production', 'Scott B Smar', 2, 12], 
+['The euro and corporate financing before the crisis', 'Scott C. Lin', 1, 12], 
+['Top management turnover an empirical investigation of mutual fund managers', 'Tung Lam Dan', 2, 14], 
+['WSJ Category Kings â€“ The impact of media attention on consumer and mutual fund investment decision', 'Zhongjin L', 3, 15], 
+['X-CAPM: An extrapolative capital asset pricing model', 'Zoran IvkoviÄ‡', 1, 15], 
+['Contracting in the investment management industry:', 'Darrell Duffie', 3, 3
+], ['Short interest and aggregate stock returns', 'Peter Carr', 4, 10], 
+['Short interest, institutional ownership, and stock returns', 'Peter Christoffersen', 4, 10], 
+['Short sales, institutional investors and the cross-section of stock return', 'Peter Christoffersen', 3, 10], 
+['Short selling in initial public offering', 'Peter Christoffersen', 3, 10], 
+['Short selling meets hedge fund 13F: An anatomy of informed deman', 'Peter DeMarz', 1, 10], 
+['Shorting at close range: A tale of two types', 'Peter Dodd', 1, 10], 
+['Shorting flows, public disclosure, and market efficiency', 'Peter Dodd', 1, 10], 
+['Short-sale constraints and stock returns', 'Peter Dodd', 1, 10], 
+['Short-sellers, fundamental analysis, and stock returns', 'Peter FeldhÃ¼tte', 1, 10], 
+['Tax shelters and corporate debt policy', 'Richard S. Rubac', 3, 11], 
+['The effects of uncertainty on market liquidity: Evidence from Hurricane Sand', 'Sanjiv Das', 3, 12], 
+['The empirical foundations of the arbitrage pricing theor', 'Sanjoy Bas', 3, 12], 
+['The empirical riskâ€“return relation: A factor analysis approach', 'Sara B Moeller', 1, 12], 
+['Too good to be true? Fallacies in evaluating risk factor model', 'Travis L. Johnso', 4, 14], 
+['Expectation and duration at the effective lower boun', 'Harry Huizinga', 2, 5
+], ['On the systematic volatility of unpriced earning', 'Mark R. Huso', 2, 8
+], ['On the term structure of interest rate', 'Mark Rubinstei', 1, 8
+], ['Shareholder wealth effects of corporate takeover', 'Peter A. Brous', 3, 10], 
+['Shareholder wealth, information signaling and the specially designated dividen', 'Peter Asch', 3, 10], 
+['Sharing information in the credit market: Contract-level evidence from U.S. firm', 'Peter Blair Henr', 3, 10], 
+['Sharing rules and equilibrium in an international capital market under uncertainty', 'Peter Carr', 3, 10], 
+['Shark repellents and stock price', 'Peter Carr', 2, 10], 
+['Short- and long-term demand curves for stocks: theory and evidence on the dynamics of arbitrag', 'Peter Carr', 1, 10], 
+['The effects of takeover defenses: Evidence from closed-end funds', 'Sanjay K. Nawalkha', 1, 12], 
+['The relation between the return interval and betas', 'Sumit Agarwa', 1, 13], 
+['The relation between the Value Line enigma and post-earnings-announcement drif', 'Sumit Agarwa', 1, 13], 
+['World markets for raising new capita', 'Zhiguo H', 3, 15], 
+['Worldwide reach of short selling regulations', 'Zhiming Ma', 2, 15], 
+['An analysis of secured deb', 'Andrew Ang', 1, 1
+], ['Collateralizing liquidit', 'Clifford W. Smit', 3, 2
+], ['Exercise behavior, valuation, and the incentive effects of employee stock option', 'Harry DeAngelo', 2, 5
+], ['Human capital and capital market equilibrium', 'Jianfeng Y', 3, 6
+], ['Leverage decision and manager compensation with choice of effort and volatilit', 'Kathleen Weiss Hanle', 2, 7
+], ['Share issue privatizations as financial means to political and economic ends', 'Paul Schultz', 3, 10], 
+['Share price and mortality: An empirical evaluation of newly listed Nasdaq stocks', 'Paul Schultz', 2, 10], 
+['Share repurchase through transferable put rights', 'Paulo Maio', 2, 10], 
+['Share repurchases and firm performance', 'Pavel G. Savor', 2, 10], 
+['Share restrictions and asset pricing: Evidence from the hedge fund industr', 'Pavel Savo', 2, 10], 
+['Shareholder bargaining power and the emergence of empty creditor', 'Pedro Barros', 2, 10], 
+['Shareholder democracy in play: Career consequences of proxy contests', 'Peggy M. Lee', 2, 10], 
+['Shareholder investment horizons and the market for corporate control', 'Peggy Wier', 1, 10], 
+['Shareholder nonparticipation in valuable rights offerings: New findings for an old puzzl', 'Pengjie Ga', 1, 10], 
+['Shareholder wealth effects and bid negotiation in freeze-out deals: Are minority shareholders left out in the cold', 'Pengjie Ga', 1, 10], 
+['The effects of leveraged buyouts on productivity and related aspects of firm behavio', 'Sanjai Bhaga', 3, 12], 
+['The effects of management buyouts on operating performance and value', 'Sanjai Bhaga', 3, 12], 
+['The effects of media slant on firm behavio', 'Sanjai Bhaga', 2, 12], 
+['The effects of q and cash flow on investment in the presence of measurement erro', 'Sanjai Bhaga', 2, 12], 
+['The effects of removing barriers to equity issuanc', 'Sanjai Bhaga', 1, 12], 
+['The relation between forward prices and futures prices', 'Sumit Agarwa', 3, 13], 
+['The relation between implied and realized volatility', 'Sumit Agarwa', 3, 13], 
+['Collateral, debt capacity, and corporate investment: Evidence from a natural experimen', 'Clifford W. Smit', 2, 2
+], ['Executive stock options, differential risk-taking incentives, and firm value', 'Harry DeAngelo', 2, 5
+], ['Executive stock ownership and performance tracking faint trace', 'Harry DeAngelo', 2, 5
+], ['How valuable are independent directors? Evidence from external distraction', 'Jianfeng H', 4, 6
+], ['Leverage constraints and asset prices: Insights from mutual fund risk taking', 'Kathleen M. Kahl', 2, 7
+], ['Predicting anomaly performance with politics, the weather, global warming, sunspots, and the stars', 'Mikhail Cherno', 4, 9
+], ['Sentiment and stock prices: The case of aviation disasters', 'Paul Scanlon', 4, 10], 
+['Sentiments, financial markets, and macroeconomic fluctuation', 'Paul Schneider', 2, 10], 
+['Separating microstructure noise from volatilit', 'Paul Schneider', 2, 10], 
+['Shades of darkness: A pecking order of trading venue', 'Paul Schultz', 1, 10], 
+['Shaped by their daughters: Executives, female socialization, and corporate social responsibility', 'Paul Schultz', 1, 10], 
+['Share issuance and cash saving', 'Paul Schultz', 1, 10], 
+['Share issuance and cross-sectional returns: International evidence', 'Paul Schultz', 1, 10], 
+['The effects of firm-initiated clawback provisions on bank loan contracting', 'Sanford J. Grossma', 4, 12], 
+['The effects of government ownership on bank lendin', 'Sang Yong Park', 2, 12], 
+['The effects of institutional investor objectives on firm valuation and governanc', 'Sanjai Bhaga', 1, 12], 
+
+        ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
+
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "WebSite162459",
+		"url": "index.html"
+}</script>
+    <meta property="og:title" content="finance_data">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#2e32c1">
+    <link rel="canonical" href="index.html">
+    <meta property="og:url" content="index.html">
+  </head>
+  <body class="u-body">
+    <section class="u-align-center u-clearfix u-section-1" id="sec-dbbf">
+      <h2 class="u-custom-font u-font-playfair-display u-text u-text-default u-text-1">TEMPORALLY-BIASED
+CLUSTERING</h2>
+      <h6 class="u-text u-text-default u-text-2"> Journal of Financial
+  Economics </h6>
+      <div class="u-container-style u-expanded-width u-group u-palette-5-dark-1 u-group-1">
+        <div class="u-container-layout u-valign-middle-xl u-container-layout-1">
+          <div class="u-expanded-width-xs u-tab-links-align-left u-tabs u-tabs-1">
+            <ul class="u-spacing-10 u-tab-list u-unstyled" role="tablist">
+              <li class="u-tab-item u-tab-item-1" role="presentation">
+                <a class="active u-active-palette-2-light-3 u-button-style u-tab-link u-text-active-black u-text-body-alt-color u-tab-link-1" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="true">OVERVIEW</a>
+              </li>
+              <li class="u-tab-item u-tab-item-2" role="presentation">
+                <a class="u-active-palette-2-light-3 u-button-style u-tab-link u-text-active-black u-text-body-alt-color u-tab-link-2" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="false">GRAPHS</a>
+              </li>
+              <li class="u-tab-item" role="presentation">
+                <a class="u-active-palette-2-light-3 u-button-style u-tab-link u-text-active-black u-text-body-alt-color u-tab-link-3" id="link-tab-2917" href="#tab-2917" role="tab" aria-controls="tab-2917" aria-selected="false">TABLES</a>
+              </li>
+              <li class="u-tab-item u-tab-item-4" role="presentation">
+                <a class="u-active-palette-2-light-3 u-button-style u-tab-link u-text-active-black u-text-body-alt-color u-tab-link-4" id="tab-6e5a" href="#link-tab-6e5a" role="tab" aria-controls="link-tab-6e5a" aria-selected="false">ANALYSIS</a>
+              </li>
+            </ul>
+            <div class="u-tab-content">
+              <div class="u-container-style u-shape-rectangle u-tab-active u-tab-pane u-tab-pane-1" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+                <div class="u-container-layout u-valign-top u-container-layout-2">
+                  <h5 class="u-text u-text-default u-text-3">WHAT THE DATA REPRESENTS</h5>
+                  <div class="u-border-3 u-border-white u-expanded-width u-line u-line-horizontal u-line-1"></div>
+                  <p class="u-text u-text-default u-text-4">Text mining tasks, such as document clustering and topic modeling, have been widely used for analyzing scientific publications. Understanding the trend of topics in scientific literature is of unique interest; however, time is often neglected as a feature in these text-mining algorithms. In particular, it is important to choose an appropriate performance metric to evaluate the result of these unsupervised clustering and topic modeling, and many available metrics do not accommodate a desire for temporally-clustered results that are typical of trends.<br><br> 
+For this approach, a weighted temporal feature to bias a topic clustering toward articles in a similar time frame is introduced; this is performed over a set of finance journal abstracts from 1974 to 2020. Latent Dirichlet Allocation (LDA) is used to parameterize each abstract, followed by dimensionality reduction using Singular Value Decomposition (SVD). Trending topics in the field of finance are detected, topics that are not identifiable when using the standard clustering algorithm with no temporal bias.<br><br> 
+To identify trending topics, a metric of the silhouette score divided by the standard deviation of cluster over time is utilized. Then isolate topics identified by this metric and evaluate them using expert judgment. This clustering strategy using temporal bias is also readily amenable to analysis in other fields for discovering the rise and fall of trends.
+</p>
+                </div>
+              </div>
+              <div class="u-align-center u-container-style u-shape-rectangle " id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+                <div class="u-container-layout u-container-layout-3">
+                  <h5 class="u-text u-text-default u-text-5">Clusters</h5>
+                  <div class="u-border-3 u-border-white u-line u-line-horizontal u-line-2" style="height:0px; width: 1000px;"></div>
+                  
+                    <div id="piechart" style="width: 1000px; height: 500px;"></div>
+
+                  
+                </div>
+              </div>
+              <div class="u-container-style u-shape-rectangle u-tab-pane-2" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
+                <div class="u-container-layout u-container-layout-4">
+                  <h4 class="u-text u-text-default u-text-7">TABLE OF CLUSTERED DATA</h4>
+                  <p class="u-text u-text-default u-text-8">
+                    <div style="color: black; text-align: left; width: 1000px;"id="table_div"></div>
+                  </p>
+                  <a href="https://github.com/gst0031/CSCE4901_Fall2020/tree/master/Dataset" class="u-btn u-button-style u-white u-btn-1">VIEW PRE-CLUSTERED DATA</a>
+                </div>
+              </div>
+              <div class="u-container-style u-shape-rectangle u-tab-pane" id="link-tab-6e5a" role="tabpanel" aria-labelledby="tab-6e5a">
+                <div class="u-container-layout u-container-layout-5">
+                  <p class="u-text u-text-default u-text-9">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                  <a href="https://github.com/gst0031/CSCE4901_Fall2020" class="u-btn u-button-style u-white u-btn-2"><span class="u-icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" style="width: 1em; height: 1em;"><g><g><g><path d="M491.422,138.859c-13.008-26.609-32.129-49.151-56.831-66.999C390.803,40.221,329.047,23.5,256,23.5     S121.197,40.221,77.409,71.859c-24.702,17.848-43.823,40.39-56.831,66.999C6.924,166.791,0,199.305,0,235.5     c0,78.285,32.285,138.172,93.614,174.195c-8.483,29.931-19.492,48.07-19.591,48.231l-18.984,30.521l35.956,0.053H91.1     c0.104,0.001,0.208,0.001,0.319,0.001c11.347,0,63.406-2.448,105.735-44.91c18.66,2.596,38.403,3.909,58.846,3.909     c73.047,0,134.803-16.723,178.591-48.36c24.702-17.848,43.823-40.39,56.831-66.999C505.076,304.208,512,271.693,512,235.5     C512,199.305,505.076,166.791,491.422,138.859z M411.164,366.716C374.237,393.396,320.583,407.5,256,407.5     c-22.19,0-43.364-1.686-62.935-5.009l-11.135-1.891l-7.369,8.559c-15.834,18.391-34.114,28.21-49.632,33.439     c4.03-10.872,8.111-23.919,11.404-38.786l3.394-15.32l-14.072-6.941C68.818,353.515,40,304.375,40,235.5     c0-57.903,20.468-102.051,60.836-131.217C137.763,77.602,191.417,63.5,256,63.5s118.237,14.103,155.164,40.783     C451.532,133.448,472,177.596,472,235.5S451.532,337.549,411.164,366.716z"></path><rect x="236" y="327.5" width="40" height="40"></rect><path d="M264.01,105.994c-22.998-2.518-45.895,4.748-62.838,19.936C184.539,140.839,175,162.187,175,184.5h40     c0-11.122,4.571-21.346,12.871-28.786c8.616-7.724,19.905-11.261,31.781-9.958c18.319,2.008,33.077,16.6,35.093,34.699     c1.622,14.574-4.888,28.78-16.991,37.072C250.983,235.87,235,265.766,235,297.5h40c0-18.534,9.481-36.094,25.363-46.975     c24.317-16.662,37.397-45.207,34.136-74.497C330.429,139.477,300.784,110.023,264.01,105.994z"></path>
+</g>
+</g>
+</g></svg><img></span>github
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <section class="u-backlink u-clearfix u-grey-80">
+    </section>
+  </body>
+</html>
