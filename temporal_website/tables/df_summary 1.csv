@@ -1,0 +1,16 @@
+,terms,trend_score,bias_avg_std_year,avg_silhoutte_per_cluster,total_items
+0,"effect, estim, find, returns, asset, structur, use, term, rate, volatil, dividend, predict, expect, risk, market, price, inform, stock, model, return",0.539162516,0.944867062,0.509436903,248
+1,"countri, stock, cost, relat, order, ownership, effect, use, tax, corpor, increas, price, investor, find, financi, institut, inform, market, trade, firm",0.112214469,0.616916901,0.069227002,337
+2,"paper, liquid, predict, find, portfolio, explain, crosssect, price, beta, asset, relat, model, returns, expect, market, volatil, stock, premium, return, risk",0.497051446,0.911444955,0.453035033,245
+3,"pay, increas, manageri, effect, stock, relat, incent, ownership, sharehold, chief, corpor, offic, find, manag, director, compens, execut, board, firm, ceo",0.62241338,0.796414659,0.49569914,262
+4,"impact, effect, cost, use, abnorm, examin, provid, insid, larg, firm, evid, return, earn, find, inform, liquid, market, price, stock, trade",0.491734125,1.019312407,0.501230694,182
+5,"use, market, activ, trade, effect, posit, find, earn, relat, funds, hedg, stock, investor, invest, return, perform, mutual, firm, manag, fund",0.612801273,0.871414136,0.534003692,268
+6,"use, expect, estim, structur, investor, risk, stock, stochast, deriv, market, process, interest, bond, term, volatil, exercis, price, rate, model, option",-0.07544965,0.597037245,-0.045046251,99
+7,"abnorm, result, negat, high, relat, cash, earn, effect, posit, market, evid, increas, signific, price, find, firm, repurchas, stock, announc, return",0.581896366,0.960553807,0.558942769,141
+8,"sharehold, increas, announc, return, firms, invest, market, bank, find, gain, stock, effect, acquir, tax, merger, valu, cash, target, capit, firm",0.580193472,0.907189261,0.526345287,132
+9,"higher, credit, liquid, inform, effect, model, manag, increas, find, industri, equiti, invest, financi, cost, leverag, capit, cash, financ, debt, firm",0.619329415,0.7622348,0.472074433,250
+10,"dure, offer, use, invest, risk, equiti, effect, find, liquid, increas, banks, financi, debt, lend, market, borrow, credit, firm, loan, bank",0.609057493,0.546302369,0.332729552,252
+11,"process, spot, distribut, blackschol, asset, interest, futur, valu, forward, paper, portfolio, bond, valuat, call, deriv, model, rate, formula, price, option",0.209477192,0.482771292,0.101129575,117
+12,"relat, firm, invest, models, capit, econom, data, market, empir, new, asset, return, use, factor, jump, risk, test, estim, price, model",-0.093690644,0.573183404,-0.053701922,113
+13,"tax, equiti, return, initi, convert, signific, ipo, spread, paper, announc, cost, debt, public, effect, issu, market, stock, firm, price, offer",-0.183010975,0.578347738,-0.105843984,123
+14,"distribut, meanvari, condit, risk, result, perform, effici, capit, statist, paper, capm, use, portfolio, return, estim, market, price, asset, model, test",0.125072552,0.537344511,0.067207049,89
