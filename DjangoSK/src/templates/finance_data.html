@@ -24,25 +24,33 @@
 
         var data = google.visualization.arrayToDataTable([
           ['Cluster', 'Total Groupings'],
-          ['1', 144],
-          ['2',     309],
-          ['3',      58],
-          ['4',  192],
-          ['5', 271],
-          ['6',    236],
-          ['7', 210],
-          ['8', 244],
-          ['9', 140],
-          ['10', 213],
-          ['11', 142],
-          ['12', 182],
-          ['13', 172],
-          ['14', 136],
-          ['15', 209],
+          ['Cluster 1', 144],
+          ['Cluster 2', 309],
+          ['Cluster 3', 58],
+          ['Cluster 4', 192],
+          ['Cluster 5', 271],
+          ['Cluster 6', 236],
+          ['Cluster 7', 210],
+          ['Cluster 8', 244],
+          ['Cluster 9', 140],
+          ['Cluster 10', 213],
+          ['Cluster 11', 142],
+          ['Cluster 12', 182],
+          ['Cluster 13', 172],
+          ['Cluster 14', 136],
+          ['Cluster 15', 209],
         ]);
 
         var options = {
-          title: 'Cluster Percentage'
+          titleFontSize: 30,
+          width: 1000, height: 500,
+          legend: { 
+                    position: "labeled", 
+                    textStyle: {color: 'black', fontSize: 20, bold: true}     
+                  },
+          chartArea: {width:900, height:400},
+          pieSliceTextStyle: {auraColor: 'black', fontSize: 15},
+          fontSize: 15, is3D: true,
         };
 
         var chart = new google.visualization.PieChart(document.getElementById('piechart'));
@@ -63,7 +71,6 @@
         data.addColumn('number', 'Issue');
         data.addColumn('number', 'Cluster');
         data.addRows([
-          ['Sample Title', 'Sample Name', 1, 4],
           ['Contracting under asymmetric information: Evidence from lockup agreements in seasoned equity offerings', 'Darren J. Kisgen', 3, 3], 
           ['Contractual incompleteness, limited liability and asset price bubble', 'Darwin Cho', 2, 3], 
           ['Identifying the effects of a lender of last resort on financial markets: Lessons from the founding of the fe', 'Jiaping Qi', 4, 6], 
@@ -161,13 +168,67 @@
 ['Share issuance and cross-sectional returns: International evidence', 'Paul Schultz', 1, 10], 
 ['The effects of firm-initiated clawback provisions on bank loan contracting', 'Sanford J. Grossma', 4, 12], 
 ['The effects of government ownership on bank lendin', 'Sang Yong Park', 2, 12], 
-['The effects of institutional investor objectives on firm valuation and governanc', 'Sanjai Bhaga', 1, 12], 
+['The effects of institutional investor objectives on firm valuation and governanc', 'Sanjai Bhaga', 1, 12],
+      ]);
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
 
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['sankey']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+                var colors = ['#a6cee3', '#b2df8a', '#fb9a99', '#fdbf6f',
+                  '#cab2d6', '#ffff99', '#1f78b4', '#33a02c'];
+        data.addColumn('string', 'From');
+        data.addColumn('string', 'To');
+        data.addColumn('number', '# of Articles');
+        data.addRows([
+          [ 'Cluster 15', '2000', 6 ],
+          [ 'Cluster 2', '2001', 7 ],
+          [ 'Cluster 3', '2002', 6 ],
+          [ 'Cluster 4', '2003', 2 ],
+          [ 'Cluster 5', '2004', 9 ],
+          [ 'Cluster 6', '2005', 3 ],
+          [ 'Cluster 7', '2006', 8 ],
+          [ 'Cluster 8', '2007', 5 ],
+          [ 'Cluster 9', '2008', 9 ],
+          [ 'Cluster 10', '2009', 12 ],
+          [ 'Cluster 11', '2010', 5 ],
+          [ 'Cluster 12', '2011', 5 ],
+          [ 'Cluster 13', '2012', 9 ],
+          [ 'Cluster 14', '2013', 16 ],
+          [ 'Cluster 15', '2014', 19 ],
+          [ 'Cluster 1', '2015', 23 ],
+          [ 'Cluster 15', '2016', 9 ],
+          [ 'Cluster 13', '2017', 5 ],
+          [ 'Cluster 5', '2018', 4 ],
+          [ 'Cluster 9', '2019', 8 ],
+          [ 'Cluster 12', '2020', 4 ],
         ]);
 
-        var table = new google.visualization.Table(document.getElementById('table_div'));
+        // Sets chart options.
+        var options = {
+                width: 1000, height: 800,
+      sankey: {
+        node: {
+          colors: colors, label: {fontSize:17, color: '#eee', bold: true},
+        },
+        link: {
+          colorMode: 'gradient',
+          colors: colors
+        }
+      }
+    };
 
-        table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+
+        // Instantiates and draws our chart, passing in some options.
+        var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+        chart.draw(data, options);
       }
     </script>
 
@@ -191,8 +252,8 @@
 CLUSTERING</h2>
       <h6 class="u-text u-text-default u-text-2"> Journal of Financial
   Economics </h6>
-      <div class="u-container-style u-expanded-width u-group u-palette-5-dark-1 u-group-1">
-        <div class="u-container-layout u-valign-middle-xl u-container-layout-1">
+      <div class="u-container-style u-expanded-width u-group u-palette-5-dark-1 u-group-1" style="background-image: linear-gradient(#3e6069, #20443d);">
+        <div style="text-align: center;"class="u-container-layout u-valign-middle-xl u-container-layout-1">
           <div class="u-expanded-width-xs u-tab-links-align-left u-tabs u-tabs-1">
             <ul class="u-spacing-10 u-tab-list u-unstyled" role="tablist">
               <li class="u-tab-item u-tab-item-1" role="presentation">
@@ -219,17 +280,32 @@ To identify trending topics, a metric of the silhouette score divided by the sta
 </p>
                 </div>
               </div>
-              <div class="u-align-center u-container-style u-shape-rectangle " id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+              <div class="u-align-center u-container-style u-shape-rectangle  u-tab-pane u-tab-pane-2" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
                 <div class="u-container-layout u-container-layout-3">
-                  <h5 class="u-text u-text-default u-text-5">Clusters</h5>
+                  <h5 style="text-align: center;" class="u-text u-text-default u-text-5">A Visual Representation of the Clusters</h5>
                   <div class="u-border-3 u-border-white u-line u-line-horizontal u-line-2" style="height:0px; width: 1000px;"></div>
-                  
-                    <div id="piechart" style="width: 1000px; height: 500px;"></div>
+                    
+                    <p style="font-size: 30px; font-weight: bold; text-align: 150px">Percentage by Cluster</p>
+                    <div style="text-align: center;" id="piechart" style="width: 1000px; height: 500px;"></div>
 
-                  
+                    <br>
+                    <div class="u-border-3 u-border-white u-line u-line-horizontal" style="height:0px; width: 1000px; "></div>
+                    <div >
+                    <p style="font-size: 30px; font-weight: bold; text-align: 150px; ">Temporal Clustering: Sankey Diagram</p>
+                        <div id="sankey_basic" style="width: 1000px; height: 800px; "></div>
+                    </div>
+
+                    <br>
+                    <div class="u-border-3 u-border-white u-line u-line-horizontal" style="height:0px; width: 1000px;"></div>
+                    <p style="font-size: 30px; font-weight: bold; text-align: 150px">GRAPH HERE</p>
+                    <br>
+                    <div class="u-border-3 u-border-white u-line u-line-horizontal" style="height:0px; width: 1000px;"></div>
+                    <p style="font-size: 30px; font-weight: bold; text-align: 150px">GRAPH HERE</p>
                 </div>
+                
+                  
               </div>
-              <div class="u-container-style u-shape-rectangle u-tab-pane-2" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
+              <div class="u-container-style u-shape-rectangle u-tab-pane" id="tab-2917" role="tabpanel" aria-labelledby="link-tab-2917">
                 <div class="u-container-layout u-container-layout-4">
                   <h4 class="u-text u-text-default u-text-7">TABLE OF CLUSTERED DATA</h4>
                   <p class="u-text u-text-default u-text-8">
